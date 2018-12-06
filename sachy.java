@@ -29,8 +29,6 @@ public class sachy {
 		}
 		int[][] pole = new int[N][N];
 		int count = 0;
-		int[][] blacklist = new int[1000][2];
-		int j = 0;
 		for (int x = 0; x < N; x++) {
 			for (int y = 0; y < N; y++) {
 				pole[x][y] = -1;
@@ -53,7 +51,6 @@ public class sachy {
 			}
 			}
 			count++;
-			j = 0;
 		}
 		System.out.printf("%d", count);
 		System.out.println("");
