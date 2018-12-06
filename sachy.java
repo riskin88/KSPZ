@@ -43,11 +43,8 @@ public class sachy {
 				if (pole[radek][sloupec] == count){
 					for (int i = 0; i < T; i++){
 						if (radek + tahy[i][0]< N && radek + tahy[i][0] >= 0 && sloupec + tahy[i][1] < N && sloupec + tahy[i][1] >= 0){
-							if (pole[radek + tahy[i][0]][sloupec + tahy[i][1]] == -1 /* &&
-							tahy[i][0] != blacklist[j][0] && tahy[i][1] != blacklist[j][1]*/){	
+							if (pole[radek + tahy[i][0]][sloupec + tahy[i][1]] == -1){	
 							pole[radek + tahy[i][0]][sloupec + tahy[i][1]] = count + 1;
-						/*	blacklist[j][0] = -1 * tahy[i][0];
-							blacklist[j][1] = -1 * tahy[i][1]; */
 							j++;
 							}
 						}
@@ -83,26 +80,5 @@ public class sachy {
 			}
 			System.out.println("");
 		}
-		/* for (int[] a : pole) {
-			for (int i : a) {
-				System.out.print(i + "\t"); 
-			}
-					 	System.out.println("\n"); 
-		}
-		
-		/*System.out.printf("%d, %d", N, T);
-		for (int i : ted) {
-            System.out.println(i);
-        }
-		for (int i : finish) {
-            System.out.println(i);
-        }
-		for (int[] a : tahy) {
-			for (int i : a) {
-				System.out.print(i + "\t"); 
-			}
-					 	System.out.println("\n"); */
 	}
 }
-
-
