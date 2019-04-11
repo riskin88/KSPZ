@@ -1,0 +1,2 @@
+javac -cp J360Controller.jar controller_input.java
+java -cp .;J360Controller.jar controller_input
